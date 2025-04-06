@@ -176,7 +176,9 @@ body.active { overflow: hidden; }
  * #REUSED STYLE
 \*-----------------------------------*/
 
-.container { padding-inline: 10px; }
+.container { padding-inline: 10px; 
+
+}
 
 .h1 {
   font-size: var(--fs-1);
@@ -215,14 +217,14 @@ body.active { overflow: hidden; }
 .btn-primary { border-color: var(--color-primary); }
 
 .btn-primary:is(:hover, :focus) {
-  background: var(--color-primary);
+  background: #3880ff;
   color: var(--bg-primary);
 }
 
 .btn-secondary {
-  background: var(--raw-seinna);
-  border-color: var(--raw-seinna);
-  color: var(--black);
+  background:#3880ff;
+  border-color: white;
+  color: white;
 }
 
 .btn-secondary:is(:hover, :focus) { --raw-seinna: hsl(24, 74%, 64%); }
@@ -259,7 +261,7 @@ body.active { overflow: hidden; }
 .tooltip {
   position: absolute;
   top: -40px;
-  background: var(--raw-seinna);
+  background: #3880ff;
   min-width: max-content;
   color: var(--white);
   font-size: 15px;
@@ -318,7 +320,7 @@ body.active { overflow: hidden; }
 
 .logo span {
   display: inline-block;
-  color: var(--raw-seinna);
+  color: #3880ff;
   margin-left: 2px;
 }
 
@@ -335,7 +337,7 @@ body.active { overflow: hidden; }
 }
 
 .navbar-actions option {
-  background: var(--bg-primary);
+  background: #3880ff;
   color: var(--color-primary);
 }
 
@@ -376,7 +378,7 @@ body.active { overflow: hidden; }
 .nav-toggle-btn span {
   width: 20px;
   height: 2px;
-  background: var(--color-primary);
+  background: #3880ff;
   margin: 5px;
   transition: var(--transition-1);
 }
@@ -518,7 +520,7 @@ main { overflow-x: hidden; }
 .stats-card:is(:hover, :focus) { transform: translateY(-5px); }
 
 .stats-card .card-icon {
-  background: var(--raw-seinna);
+  background: #3880ff;
   width: 60px;
   height: 60px;
   display: grid;
@@ -533,7 +535,7 @@ main { overflow-x: hidden; }
 
 .stats-card .card-title {
   width: calc(100% - 95px);
-  color: var(--raw-seinna);
+  color: #3880ff;
   text-align: center;
 }
 
@@ -602,7 +604,7 @@ main { overflow-x: hidden; }
   left: 5px;
   bottom: 5px;
   width: 93px;
-  background: var(--raw-seinna);
+  background: #3880ff;
   border-radius: 100px;
   transition: var(--transition-1);
   z-index: -1;
@@ -1019,7 +1021,9 @@ textarea.input-field {
  */
 
 @media (min-width: 992px) {
-
+.hero img{
+  margin-top: 90px;
+}
   /**
    * CUSTOM PROPERTY
    */
@@ -1153,7 +1157,7 @@ textarea.input-field {
     content: "";
     position: absolute;
     bottom: -40px;
-    left: 13px;
+    left: 25px;
     width: 2px;
     height: 30px;
     background: var(--color-secondary);
@@ -1164,8 +1168,9 @@ textarea.input-field {
     color: var(--color-secondary);
     margin-block: 5px;
     padding: 5px;
-    font-size: 18px;
+    font-size: 15px;
     transition: var(--transition-1);
+    margin-left: 18px;
   }
 
   .hero-social-link:is(:hover, :focus) { color: var(--color-primary); }
@@ -1187,7 +1192,7 @@ textarea.input-field {
     display: block;
     position: absolute;
     bottom: 80px;
-    right: -30px;
+    right: -20px;
     color: var(--color-secondary);
     font-size: 1.125rem;
     text-transform: uppercase;
@@ -1324,7 +1329,7 @@ textarea.input-field {
 
   .hero-social-list { left: -80px; }
 
-  .scroll-down { right: -80px; }
+  .scroll-down { right: -60px; }
 
 
 
