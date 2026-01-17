@@ -504,6 +504,7 @@ main { overflow-x: hidden; }
 .stats-list {
   display: grid;
   gap: 30px;
+  
 }
 
 .stats-card {
